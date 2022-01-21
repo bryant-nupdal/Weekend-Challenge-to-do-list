@@ -1,0 +1,13 @@
+header{
+    text-align: center;
+}
+
+table{
+    width: 100%
+}
+
+footer{
+    text-align: right;
+    font-weight: bolder;
+    font-size: small;
+}
