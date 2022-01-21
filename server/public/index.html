@@ -12,12 +12,20 @@
 <body>
     <header><h1>To-Do List</h1></header>
     <main>
-        <div id="input">
-            <input id="categories" placeholder="Category" />
+        <form id="input">
+            <label>Category</label>
+            <select id="categories">
+                <option>          </option>
+                <option>Chore</option>
+                <option>Errand</option>
+                <option>Grocery</option>
+                <option>Homework</option>
+                <option>Other</option>
+            </select>
             <input id="task" placeholder="Task At Hand" />
             <input id="due" placeholder="Due Date?" />
             <button id="submit-button">Submit Task</button>
-        </div>
+        </form>
             <table>
                 <thead>
                     <tr>
