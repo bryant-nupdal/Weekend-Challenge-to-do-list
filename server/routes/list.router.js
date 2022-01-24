@@ -3,7 +3,7 @@ const router = express.Router();
 const pool = require('../modules/pool.js');
 
 router.get('/', (req,res) => {
-    const queryText = 'SELECT * FROM "list" ORDER BY "complete";';
+    const queryText = 'SELECT * FROM "list" ORDER BY "categories";';
     pool.query(queryText).then((result) => {
         res.send(result.rows);
     }).catch((error)=> {

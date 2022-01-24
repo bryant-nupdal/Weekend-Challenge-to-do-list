@@ -20,6 +20,7 @@
   "homepage": "https://github.com/bryant-nupdal/Weekend-Challenge-to-do-list#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "moment": "^2.29.1",
     "pg": "^8.7.1"
   }
 }

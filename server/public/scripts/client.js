@@ -39,15 +39,18 @@ function refreshList(){
     }).then((response) => {
         $('#data').empty();
         for (let task of response){
-
+            let className = '';
+            console.log('what is ', task.complete)
+            if (task.complete === true){
+                className = 'taskcompleted'
+            }
             $('#data').append(`
-            <tr>
+            <tr class='${className}'>
+                <td><button class="complete-button" data-taskid='${task.id}' data-iscomplete='${task.complete}'>✔</button></td>
                 <td>${task.categories}</td>
                 <td>${task.task}</td>
-                <td>${task.due}</td>
-                <td>${task.complete}</td>
-                <td><button class="complete-button" data-taskid='${task.id}' data-iscomplete='${task.complete}'>Complete</button></td>
-                <td><button class="delete-button" data-listid='${task.id}'>Delete</button></td>
+                <td>${moment(task.due).format('MMM Do YY')}</td>
+                <td><button class="delete-button" data-listid='${task.id}'>❌</button></td>
             </tr>
             `)
         }

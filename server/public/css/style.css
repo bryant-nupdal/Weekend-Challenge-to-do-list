@@ -6,6 +6,25 @@ table{
     width: 100%
 }
 
+.taskcompleted{
+    text-decoration: line-through;
+    background-color:rgba(128, 128, 128, 0.301);
+}
+
+.complete-button{
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}
+
+.delete-button{
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}
+
 footer{
     text-align: right;
     font-weight: bolder;
