@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <script src="vendors/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="scripts/client.js"></script>
@@ -27,6 +30,7 @@
             <input id="due" placeholder="Due Date?" />
             <button id="submit-button">Submit Task</button>
         </form>
+            <p>select ✔ to mark task as complete and ❌ to remove the task from the list</p>
             <table>
                 <thead>
                     <tr>
@@ -34,7 +38,9 @@
                         <th>Categories</th>
                         <th>Task</th>
                         <th>Due</th>
+                        <th>   </th>
                     </tr>
+                    <hr />
                 </thead>
                 <tbody id="data"></tbody>
             </table>

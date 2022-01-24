@@ -1,9 +1,57 @@
-header{
-    text-align: center;
+body{
+    max-width: 800px;
+    background-color: rgb(252, 235, 204);
+    margin-left: 40px;
+    font-family: 'Gochi Hand', cursive;
 }
 
-table{
-    width: 100%
+header{
+    text-align: center;
+    font-size: x-large;
+}
+
+main {
+    border: solid rgba(128, 128, 128);
+}
+
+#input {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.301);
+    padding: 10px;
+    border:solid rgba(128, 128, 128);
+}
+
+p {
+    text-align: right;
+    font-weight: bolder;
+    font-size: small;
+    margin-right: 5%;
+    color:rgb(128, 128, 128);
+}
+
+hr{
+    border:solid rgb(128, 128, 128) 1px;
+}
+table {
+    width: 100%;
+    display: table;
+}
+
+th{
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:rgb(128, 128, 128);
+    border-bottom: solid rgba(128, 128, 128, 0.301);
+    font-size: large;
+}
+
+td{
+    border-bottom: solid rgba(128, 128, 128, 0.301);
+    padding-bottom: 2px;
 }
 
 .taskcompleted{
@@ -29,4 +77,6 @@ footer{
     text-align: right;
     font-weight: bolder;
     font-size: small;
+    margin-right: 10%;
+    color:rgb(128, 128, 128);
 }
